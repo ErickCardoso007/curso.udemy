@@ -19,3 +19,4 @@ let textoTentativas = 'Voce precisou de ' + tentativas + ' tentativas pra ganhar
 
 let opcoes = tentativas >= 2 ? console.log(textoTentativas) :  console.log(textoTentativa)
 
+//teste
