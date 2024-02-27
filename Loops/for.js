@@ -13,9 +13,9 @@ for (tentativa = gerarNumeroAleatorio(); tentativa != meuNumero; tentativa = ger
 
 console.log('Voce ganhou! Seu numero sorteado foi: ' + meuNumero);
 
-if (tentativas >= 2) {
-    console.log('Voce precisou de ' + tentativas + ' tentativas pra ganhar.');
-}else{
-    console.log('Voce precisou de ' + tentativas + ' tentativa pra ganhar.');
-}
+
+let textoTentativa = 'Voce precisou de ' + tentativas + ' tentativa pra ganhar.'
+let textoTentativas = 'Voce precisou de ' + tentativas + ' tentativas pra ganhar.'
+
+let opcoes = tentativas >= 2 ? console.log(textoTentativas) :  console.log(textoTentativa)
 
