@@ -1,0 +1,21 @@
+function gerarNumeroAleatorio() {
+    return Math.floor(Math.random() * (10))
+}
+
+let tentativa;
+let meuNumero = 7
+let tentativas = 1
+
+for (tentativa = gerarNumeroAleatorio(); tentativa != meuNumero; tentativa = gerarNumeroAleatorio()) {
+    tentativas++
+    console.log('Voce errou! O numero sorteado foi: ' + tentativa);
+}
+
+console.log('Voce ganhou! Seu numero sorteado foi: ' + meuNumero);
+
+if (tentativas >= 2) {
+    console.log('Voce precisou de ' + tentativas + ' tentativas pra ganhar.');
+}else{
+    console.log('Voce precisou de ' + tentativas + ' tentativa pra ganhar.');
+}
+
