@@ -1,24 +1,25 @@
-let random = Math.floor(Math.random() * 2)
-console.log(random);
+const numRandom = () => {
+    let random = Math.floor(Math.random() * 2)
+    return random
+   
+}
 
-let nome1 = 'Ketlin'
-let num1 = parseFloat(prompt(nome1 + ", " + "Aposte em um número entre 0 e 1 "))
+let jogador1 = 'erick'
+let numJogador1 = 1
+let jogador2 = 'ketlin'
+let numJogador2 = 0
 
-let nome2 = 'Erick'
-let num2 = parseFloat(prompt(nome2 + ", " + "Aposte em um número entre 0 e 1 "))
+let random = numRandom()
 
 
-
-alert("O número sorteado foi: " + random)
-
-if(random == num1 && random == num2){
-    alert("Empate")
-}else if(num1 == random){
-    alert("Seu número foi sorteado " + nome1 + "!")
-}else if(num2 == random){
-    alert("Seu número foi sorteado " + nome2 + "!")
-}else if(random != num1 && random != num2){
-    alert("Ambos perderam a aposta")
+if(random == numJogador1 && random == numJogador2){
+    console.log("Empate")
+}else if(numJogador1 == random){
+    console.log("Seu número foi sorteado " + jogador1 + "!")
+}else if(numJogador2 == random){
+    console.log("Seu número foi sorteado " + jogador2 + "!")
+}else if(random != numJogador1 && random != numJogador2){
+    console.log("Ambos perderam a aposta")
 }else{
-    alert("Error")
+    console.log("Error")
 }
