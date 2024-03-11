@@ -1,11 +1,19 @@
 // Function de forma literal
-function fun1() { }
+function comprimentar() {
+    return 'oi'
+}
+console.log(comprimentar());
 
 // armazenar em uma variavel
-const fun2 = function () {}
+const somaDeValores = function (a, b ) {
+    let soma = a + b
+    return soma
+}
+console.log(somaDeValores(2, 3));
 
 // armazenar em um array
-const array = [function (a, b) { return a + b}]
+const array = [function (a, b) { return a - b}]
+console.log(array[0](2, 4));
 
 // Armazenar em um atributo de objeto
 const obj = {}
