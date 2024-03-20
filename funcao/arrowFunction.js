@@ -1,3 +1,10 @@
-let media = (a, b) => (a + b) / 2;
+/* function tradicional */
 
-console.log(media(10, 5));
+function subtrai (a, b) {
+    return a - b
+}
+
+/* arrow function */
+
+soma = (a, b) => a + b
+
