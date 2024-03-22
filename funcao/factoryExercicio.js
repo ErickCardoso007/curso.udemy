@@ -1,13 +1,13 @@
-function pessoa(nome, idade, salario, cargo, tempoNaEmpresa){
-    return {
-        nome: nome,
-        idade: idade, 
-        salario: salario,
-        cargo: cargo, 
-        tempoNaEmpresa: tempoNaEmpresa
-    }
+function produto(nome, preco, desconto = 0.10){
+    return{
+    nome: nome,
+    preco: preco, 
+    desconto: desconto,
     
-}
+   }
 
-console.log(pessoa('Erick', 18, 1.505, 'Sushiman', '16 meses'));
+}
+console.log(produto('maca', 29, 0.15));
+
+
 
