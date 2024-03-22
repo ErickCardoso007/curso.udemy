@@ -1,8 +1,8 @@
-const pessoas = ['Ana', 'Maria', 'Ketlin', 'Erick']
+const pessoas = [2, 4, 5, 3, 6, 7, 8, 9]
 
-let imprimir = function(nome, indice) {
-    console.log(`${indice + 1}. ${nome}`);
+let imprimir = function(nome) {
+    console.log(nome + nome);
 }
 
-pessoas.forEach(imprimir)
-pessoas.forEach((nome) => console.log(nome))
+
+console.log(pessoas.length);
