@@ -2,8 +2,7 @@
 
 
 function retornaPonteciacao(base, expoente){
-    let result = Math.pow(base, expoente)
-    return result
+    return Math.pow(base, expoente)
 }
 
 console.log(retornaPonteciacao(2, 3));
