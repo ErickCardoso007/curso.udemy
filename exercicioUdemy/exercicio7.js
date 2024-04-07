@@ -18,4 +18,4 @@ function bhaskara(ax2, bx, c){
    
 }
 
-console.log(bhaskara(2, -5, 2));
+console.log(bhaskara(2, -5, 2))
