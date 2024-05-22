@@ -1,27 +1,37 @@
+// Um funcionário irá receber um aumento de acordo com o seu plano de
+// trabalho, de acordo com a tabela abaixo:
+// plano | aumento
+// A     |     10%
+// B     |     15%
+// C     |     20%
 
-function implementaAumentoDeSalario(porcentagem, salarioAtual){
-    function processaAumento(porcentagem, salarioAtual){
-        let definePorcentagem = (porcentagem * salarioAtual) / 100
-        let calculaAumento = salarioAtual + definePorcentagem
+
+
+
+function implementaAumentoDeSalario(plano, aumento,  salarioAtual){
+     
+    function processaAumento(plano, aumento, salarioAtual){
+        const definePorcentagem = (aumento * salarioAtual) / 100
+        const calculaAumento = salarioAtual + definePorcentagem
         return calculaAumento
     }
-    
-    switch(porcentagem){
-        case 10:
-            console.log(`Apos aumento de ${porcentagem}%, o seu salario ficou em R$${processaAumento(porcentagem, salarioAtual)}`);
+    const textoFixo = `Apos aumento de ${aumento}%, o seu salario ficou em R$${processaAumento(plano, aumento, salarioAtual)}`
+    switch(plano){
+        case 'A':
+            console.log(textoFixo);
             break
-        case 15:
-            console.log(`Apos aumento de ${porcentagem}%, o seu salario ficou em R$${processaAumento(porcentagem, salarioAtual)}`);
+        case 'B':
+            console.log(textoFixo);
             break
-        case 20:
-            console.log(`Apos aumento de ${porcentagem}%, o seu salario ficou em R$${processaAumento(porcentagem, salarioAtual)}`);
+        case 'C':
+            console.log(textoFixo);
             break
             default:
                 console.log('Erro: Plano invalido.');
     }
 }
 
-implementaAumentoDeSalario(10, 1200)
-implementaAumentoDeSalario(15, 1200)
-implementaAumentoDeSalario(20, 1200)
+implementaAumentoDeSalario("A", 10, 1200)
+implementaAumentoDeSalario("B", 15, 1200)
+implementaAumentoDeSalario("C", 20,1200)
 implementaAumentoDeSalario(666, 1200)
