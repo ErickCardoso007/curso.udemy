@@ -4,7 +4,7 @@
 // compostos). O retorno deve ser o valor a ser pago para o respectivo mês escolhido
 
 
-const calc = (mes, valor) => {
+const calculaJuros = (mes, valor) => {
     const valorSemJuros = valor
     let i = 1
     let calcPorcentagem = valor * 5 / 100
