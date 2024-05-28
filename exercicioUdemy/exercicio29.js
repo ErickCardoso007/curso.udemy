@@ -6,7 +6,7 @@ const array = [5, 10, 15, 20, 25]
 let qtdDentro = 0
 let qtdFora = 0
 
-array.forEach(function soma(item){
+array.forEach(function verificaIntervalo(item){
     if(item >= 10 && item <= 20){
         qtdDentro++;
     }else{
