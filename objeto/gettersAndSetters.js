@@ -12,4 +12,4 @@ const obj = {
 console.log(obj.primeiroAnimal);
 obj.primeiroAnimal = 'Macaco'
 
-console.log(obj.animais.sort());
+console.log(obj.animais);
