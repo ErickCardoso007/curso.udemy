@@ -1,6 +1,6 @@
 Array.prototype.forEach2 = function(callback){
     for(let i = 0; this.length > i; i++){
-        callback(this[i], i)
+        callback( this[i],i)
     }
 }
 
